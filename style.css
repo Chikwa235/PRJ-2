@@ -48,6 +48,20 @@ h1 {
   margin: 25px 0;
 }
 
+.toggle-container button {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+
 
 
 
