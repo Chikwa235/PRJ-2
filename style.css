@@ -137,6 +137,33 @@ h1 {
   }
 }
 
+@media (max-width: 480px) {
+  .search input {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .categories {
+    gap: 15px;
+  }
+}
+
+
 
 
 
