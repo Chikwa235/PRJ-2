@@ -8,3 +8,11 @@
   --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   --transition: all 0.3s ease-in-out;
 }
+
+body.dark-mode {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --card-bg: #1e1e1e;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
