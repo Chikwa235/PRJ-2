@@ -37,3 +37,17 @@ function filterCards() {
   }
 }
 
+/**
+ * Toggles the dark mode class on the document body.
+ */
+function toggleDarkMode() {
+  const bodyElement = document.body;
+
+  if (bodyElement.classList.contains('dark-mode') === true) {
+    bodyElement.classList.remove('dark-mode');
+  } else {
+    bodyElement.classList.add('dark-mode');
+  }
+}
+
+
