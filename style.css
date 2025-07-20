@@ -37,6 +37,14 @@ header {
   animation: fadeIn 1s ease-in-out;
 }
 
+h1 {
+  font-size: 2.8rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+
+
 
 
 
