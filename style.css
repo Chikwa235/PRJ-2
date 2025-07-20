@@ -23,4 +23,13 @@ body.dark-mode {
   font-family: 'Segoe UI', sans-serif;
 }
 
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 20px;
+  line-height: 1.6;
+  transition: var(--transition);
+}
+
+
 
