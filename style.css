@@ -163,6 +163,29 @@ h1 {
   }
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.logo-icon {
+  font-size: 2.6rem;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 1.2px;
+  font-weight: 800;
+}
+
+
+
 
 
 
