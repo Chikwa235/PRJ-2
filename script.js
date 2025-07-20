@@ -50,4 +50,12 @@ function toggleDarkMode() {
   }
 }
 
+// Attach event listener for input on the search field
+searchInput.addEventListener('input', filterCards);
+
+// Attach event listener for click on the toggle button
+toggleBtn.addEventListener('click', toggleDarkMode);
+
+
+
 
