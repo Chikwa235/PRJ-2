@@ -5,37 +5,32 @@ const noResultsMessage = document.getElementById('noResultsMessage');
 const toggleBtn = document.getElementById('toggleMode');
 
 /**
- * Filters cards based on the search input value.
- * Shows cards that contain the input text; hides others.
- * Displays "no results" message if no cards match.
+ * Filter cards based on search input.
+ * Show "no results" message in red if nothing matches.
  */
 function filterCards() {
-  const inputValue = searchInput.value.toLowerCase();
+  const query = searchInput.value.toLowerCase();
   let anyMatch = false;
 
-  // Iterate over each card element
-  cards.forEach(function (card) {
-    const cardText = card.textContent.toLowerCase();
-
-    // Check if card text includes the search input
-    const isMatch = cardText.indexOf(inputValue) !== -1;
-
-    // Show or hide the card based on match
-    if (isMatch === true) {
+  cards.forEach(card => {
+    const text = card.textContent.toLowerCase();
+    if (text.includes(query)) {
       card.style.display = 'block';
-      anyMatch = true; // At least one card matches
+      anyMatch = true;
     } else {
       card.style.display = 'none';
     }
   });
 
-  // Show or hide the "no results" message
-  if (anyMatch === true) {
+  if (anyMatch) {
     noResultsMessage.style.display = 'none';
   } else {
     noResultsMessage.style.display = 'block';
+    noResultsMessage.style.color = 'red'; // Make text red
   }
 }
+
+searchInput.addEventListener('input', filterCards);
 
 /**
  * Toggles the dark mode class on the document body.

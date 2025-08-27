@@ -188,7 +188,12 @@ h1 {
   font-size: 1.1rem;
   animation: fadeIn 0.3s ease-in;
   display: none; /* Hide by default */
+  color: red;
+  font-weight: bold;
 }
+
+
+
 
 
 
